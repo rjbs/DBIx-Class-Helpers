@@ -28,7 +28,7 @@ sub search {
 
  1;
 
-And then else where, like in a controller:
+And then elsewhere, like in a controller:
 
  my $rs = $self->paginate(
    $schema->resultset('Foo')->search({
@@ -39,7 +39,7 @@ And then else where, like in a controller:
 =head1 DESCRIPTION
 
 This component makes search always return a ResultSet, instead of
-returning an array of your database in array context. See
+returning an list of rows when called in list context.  See
 L<DBIx::Class::Helper::ResultSet/NOTE> for a nice way to apply it to your
 entire schema.
 
